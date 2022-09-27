@@ -19,6 +19,17 @@ The colour of the RGB LED is based on the table below:
 # Circuit 
 ![circuit Design](./images/cansat_circuit.jpg)
 
+# Temperature Table
+                    
+Temperature Range  | Colour
+------------- | -------------
+-40 <= Temp <= -10  | Blue
+-10 <= Temp <= 20   |  Green
+20 <= Temp <= 50    | Yellow
+50 <= Temp <= 80  | Purple
+80 <= Temp <= 110  | Red
+110 <= Temp <= 125  | White
+
 # Code 
 
 Before the setup(), variables were created to store the target sensor input, temperature in degrees as well as the maximum temperature.
@@ -140,16 +151,6 @@ The loop's last two if statements account for the action of the servo motor. The
   } 
 } 
 ```
-### Temperature Table
-                    
-Temperature Range  | Colour
-------------- | -------------
--40 <= Temp <= -10  | Blue
--10 <= Temp <= 20   |  Green
-20 <= Temp <= 50    | Yellow
-50 <= Temp <= 80  | Purple
-80 <= Temp <= 110  | Red
-110 <= Temp <= 125  | White
 
 
 
