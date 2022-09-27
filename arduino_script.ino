@@ -1,14 +1,17 @@
 #include <Servo.h>
 
 Servo servo_9;
-int sensorInput = 0; //The variable we will use to store the sensor input
-int tempDeg = 0; //The variable we will use to store temperature in degrees.
+//The variable we will use to store the sensor input
+int sensorInput = 0;
+//The variable we will use to store temperature in degrees
+int tempDeg = 0; 
+//The variable we will use to store the max temperture 
 int maxTemp = 0;
 
 void setup() {
-// put your setup code here, to run once:
   	pinMode(A0, INPUT);
-	Serial.begin(9600); //Start the Serial Port at 9600 baud (default)
+	//Start the Serial Port at 9600 baud (default)
+	Serial.begin(9600);
 	pinMode(LED_BUILTIN, OUTPUT);
     pinMode(3, OUTPUT);
   	pinMode(5, OUTPUT);
@@ -21,9 +24,6 @@ void loop() {
    
   //read the analog sensor and store it
    tempDeg = map(((analogRead(A0) - 20) * 3.04), 0, 1023, -40, 125);
-   Serial.print("Current Temperature: ");
-   Serial.println(tempDeg);
-  
     
   if(tempDeg<sensorInput){
     digitalWrite(3, LOW);
