@@ -1,7 +1,5 @@
 # Arduino-temp-task
 
-Name: Anika Marzia
-
 # Overview 
 This arduino code such that it lights up the RGB LED and Servo Motor depending on the temperature of the TMP36
 
