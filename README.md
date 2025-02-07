@@ -1,21 +1,28 @@
 # Arduino-temp-task
 
-# Overview 
-This arduino code such that it lights up the RGB LED and Servo Motor depending on the temperature of the TMP36
+# Overview
+This project demonstrates how to use an Arduino Uno to control an RGB LED and a servo motor based on temperature readings from a TMP36 temperature sensor. The system dynamically changes the color of the RGB LED and adjusts the servo motor angle based on the detected temperature.
 
-The servo motor has its maximum and minimum angles mapped based on the Temperature sensor 
-
-The colour of the RGB LED is based on the table below: 
+#Functionality
+- The RGB LED changes color based on a predefined temperature range.
+- The servo motor maps its movement within a set angle range according to the temperature.
+- The TMP36 temperature sensor provides real-time temperature readings, influencing both the LED color and servo position.
 
 # Components 
-- Arduino Uno
-- TMP36 Temperature Sensor 
-- 4-Leg RGB LED
-- 1 kiloohm Resistor 
-- 3-Pin Servo Motor 
+- Arduino Uno – The microcontroller board used to process sensor data and control the components.
+- TMP36 Temperature Sensor – Analog temperature sensor that outputs a voltage corresponding to the ambient temperature.
+- RGB LED (4-leg) – Displays different colors based on the temperature range.
+- 1kΩ Resistor – Used to limit current and protect the LED.
+- 3-Pin Servo Motor – Adjusts its position based on temperature variations.
 
-# Circuit 
+# Circuit Diagram 
 ![circuit Design](./images/cansat_circuit.jpg)
+
+How It Works
+1. The TMP36 sensor reads the ambient temperature.
+2. The Arduino processes the sensor's analog output and converts it to a temperature value.
+3. The RGB LED changes its color based on specific temperature thresholds.
+4. The servo motor adjusts its angle based on the temperature, mimicking a gauge-like behavior.
 
 # Temperature Table
                     
