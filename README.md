@@ -18,7 +18,7 @@ This project demonstrates how to use an Arduino Uno to control an RGB LED and a 
 # Circuit Diagram 
 ![circuit Design](./images/cansat_circuit.jpg)
 
-How It Works
+# How It Works
 1. The TMP36 sensor reads the ambient temperature.
 2. The Arduino processes the sensor's analog output and converts it to a temperature value.
 3. The RGB LED changes its color based on specific temperature thresholds.
