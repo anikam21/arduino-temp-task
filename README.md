@@ -1,4 +1,4 @@
-# Arduino-temp-task
+# Arduino Smart Temperature Control System
 
 # Overview
 This project demonstrates how to use an Arduino Uno to control an RGB LED and a servo motor based on temperature readings from a TMP36 temperature sensor. The system dynamically changes the color of the RGB LED and adjusts the servo motor angle based on the detected temperature.
